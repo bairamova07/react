@@ -11,6 +11,10 @@
 //         alt=""
 //       />
 
+import And from "./27 week/And";
+import NumberFilter from "./27 week/Day_3/Numbers";
+import Exam from "./Емтихан/Register";
+
 //       <h1>{username}</h1>
 //       <p>Age:{age}</p>
 //       {/* <Fruit></Fruit> */}
@@ -88,15 +92,228 @@
 
 // export default App;
 
-import Usercard from "./ts";
+// import Usercard from "./ts";
 
-function App() {
+// function App() {
+//   return (
+//     <div>
+//       <Usercard name="Aigul" age="22" city="Almaty" />
+//       <Usercard name="Nurlan" age="28" city="Astana" />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// import React from "react";
+// import Header from "./companents/Header";
+// import "../src/style.css";
+
+// export default function App() {
+//   return (
+//     <div className="image">
+//       <Header image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OuOM165RPvVE82lghJoHS5NRo6KtSO9Dk3mmdiumK8xZ-jiN1GGc9tR6C9HnFfgmSK4&usqp=CAU" />
+//     </div>
+//   );
+// }
+// import { useState } from "react";
+
+// export default function App() {
+//   let [count, setCount] = useState(23);
+//   console.log(setCount);
+
+//   function add() {
+//     setCount(count + 1);
+//   }
+//   function minus() {
+//     setCount(count - 1);
+//   }
+//   function reset() {
+//     setCount(count % 1);
+//   }
+//   function kobeitu() {
+//     setCount(count * 2);
+//   }
+//   function bolu() {
+//     setCount(count / 2);
+//   }
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <button onClick={add}>Add</button>
+//       <button onClick={minus}>Minus</button>
+//       <button onClick={reset}>Reset</button>
+//       <button onClick={kobeitu}>Kobeitu</button>
+//       <button onClick={bolu}>Bolu</button>
+//     </div>
+//   );
+// }
+
+// import { useState } from "react";
+
+// export default function App() {
+//   let users = [
+//     { id: 1, name: "Gulaida", age: 17 },
+//     { id: 2, name: "Aset", age: 17 },
+//     { id: 3, name: "Amir", age: 17 },
+//   ];
+//   // let names = [
+//   //   "Azamat",
+//   //   "Kunduz",
+//   //   "Gulaida",
+//   //   "Nursultan",
+//   //   "Erzhas",
+//   //   "Taimas",
+//   //   "Tolkun",
+//   //   "Nurqias",
+//   // ];
+
+//   return (
+//     <ul>
+//       {users.map((user) => (
+//         <li key={user.id}>
+//           Name:{user.name}
+//           Age:{user.age}
+//         </li>
+//       ))}
+//     </ul>
+//   );
+
+//   // return (
+//   //   <ul>
+//   //     {names.map((name) => (
+//   //       <li key={name}>{name}</li>
+//   //     ))}
+//   //   </ul>
+//   // );
+// }
+
+// import { useState } from "react";
+// export default function TextInput() {
+//   const [text, setText] = useState("");
+
+//   function change(event) {
+//     setText(event.target.value);
+//   }
+//   return (
+//     <div>
+//       <input type="text" value={text} onChange={change} />
+//       <p>Терілген текст:{text}</p>
+//     </div>
+//   );
+// }
+
+// import { useState } from "react";
+// export default function btn() {
+//   const [tasls, setTasks] = useState([]);
+//   const [task, setTask] = useState("");
+
+//   function add() {}
+//   return (
+//     <div>
+//       <h1>Тапсырмалар тізімі</h1>
+// <input type="text"
+// value={task}
+// onChange={(e)=>setTasks(e.target.value)}
+//       <button onChange={addTask}>Qosu</button>
+//     </div>
+//   );
+// }
+// import ToggleText from "./27 week/And";
+
+// function App() {
+//   return (
+//     <div>
+//       <ToggleText />
+//     </div>
+//   );
+// }
+// export default App;
+
+// export default function App() {
+//   const tasks = ["yi jumusun jasay", "react yireny", "Sunup jumusin jasay"];
+
+//   return (
+//     <ul>
+//       {tasks.map((task, index) => (
+//         <li key={index}>{tasks}</li>
+//       ))}
+//     </ul>
+//   );
+// }
+
+// export default function App() {
+//   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   const newNumbers = numbers.filter((num) => num >= 5);
+
+//   return (
+//     <ul>
+//       {newNumbers.map((num, index) => (
+//         <li key={index}>{num}</li>
+//       ))}
+//     </ul>
+//   );
+// }
+
+// import Numbers from "./27 week/Day_3/Numbers";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <NumberFilter />
+//     </div>
+//   );
+// }
+// import TaskFilter from "./27 week/Day_3/TaskFilter";
+
+// export default function App() {
+//   return (
+//     <li>
+//       <TaskFilter />
+//     </li>
+//   );
+// }
+// import New from "./27 week/Day_3/New";
+
+// export default function App() {
+//   return (
+//     <li>
+//       <NumbersFilter />
+//     </li>
+//   );
+// }
+
+// import Example from "./27 week/Day_4/Footer";
+// export default function App() {
+//   return (
+//     <li>
+//       <Example />
+//     </li>
+//   );
+// }
+// import TaskFilter from "./27 week/Day_4/Footer";
+
+// export default function App() {
+//   return (
+//     <li>
+//       <TaskFilter />
+//     </li>
+//   );
+// }
+
+// import Register from "./Емтихан/Register";
+// export default function App() {
+//   return (
+//     <li>
+//       <Exam />
+//     </li>
+//   );
+// }
+import Login from "./Емтихан/Login";
+export default function App() {
   return (
-    <div>
-      <Usercard name="Aigul" age="22" city="Almaty" />
-      <Usercard name="Nurlan" age="28" city="Astana" />
-    </div>
+    <li>
+      <Login />
+    </li>
   );
 }
-
-export default App;
