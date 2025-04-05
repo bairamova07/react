@@ -11,6 +11,12 @@
 //         alt=""
 //       />
 
+import OrderForm from "./30 week/Day_1/Day_2/OrderForm";
+
+// import GameList from "./30 week/Day_1/Day_2/GameList";
+
+// import Day_1 from "./30 week/Day_1/Day_1";
+
 // import And from "./27 week/And";
 // import NumberFilter from "./27 week/Day_3/Numbers";
 // import Exam from "./Емтихан/Register";
@@ -328,99 +334,172 @@
 //   );
 // }
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-  useNavigate,
-  Navigate,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   NavLink,
+//   useNavigate,
+//   Navigate,
+// } from "react-router-dom";
 
-const NavBar = () => {
-  return (
-    <nav>
-      <NavLink
-        to="/profile"
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        My Profile
-      </NavLink>
-      <NavLink
-        to="/projects"
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        My Projects
-      </NavLink>
-      <NavLink
-        to="/about"
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        About Me
-      </NavLink>
-    </nav>
-  );
-};
+// const NavBar = () => {
+//   return (
+//     <nav>
+//       <NavLink
+//         to="/profile"
+//         className={({ isActive }) => (isActive ? "active" : "")}
+//       >
+//         My Profile
+//       </NavLink>
+//       <NavLink
+//         to="/projects"
+//         className={({ isActive }) => (isActive ? "active" : "")}
+//       >
+//         My Projects
+//       </NavLink>
+//       <NavLink
+//         to="/about"
+//         className={({ isActive }) => (isActive ? "active" : "")}
+//       >
+//         About Me
+//       </NavLink>
+//     </nav>
+//   );
+// };
 
-const Profile = () => {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <h1>My Profile</h1>
-      <p>Name: Your Name</p>
-      <p>Email: your.email@example.com</p>
-      <p>Academy: Your Academy</p>
-      <button onClick={() => navigate("/projects")}>Go to My Projects</button>
-    </div>
-  );
-};
+// const Profile = () => {
+//   const navigate = useNavigate();
+//   return (
+//     <div>
+//       <h1>My Profile</h1>
+//       <input type="text" placeholder="Enter your name" />
+//       <input type="email" placeholder="Enter your email " />
+//       <input type="text" placeholder="Enter your academy" />
+//       <button onClick={() => navigate("/projects")}>Go to My Projects</button>
+//     </div>
+//   );
+// };
 
-const Projects = () => {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <h1>My Projects</h1>
-      <ul>
-        <li>
-          <strong>Project 1:</strong> Description of project 1
-        </li>
-        <li>
-          <strong>Project 2:</strong> Description of project 2
-        </li>
-        <li>
-          <strong>Project 3:</strong> Description of project 3
-        </li>
-      </ul>
-      <button onClick={() => navigate("/about")}>Go to About Me</button>
-    </div>
-  );
-};
+// const Projects = () => {
+//   const navigate = useNavigate();
+//   return (
+//     <div>
+//       <h1>My Projects</h1>
+//       <ul>
+//         <li>
+//           <strong>Project 1:</strong> Description of project 1
+//         </li>
+//         <li>
+//           <strong>Project 2:</strong> Description of project 2
+//         </li>
+//         <li>
+//           <strong>Project 3:</strong> Description of project 3
+//         </li>
+//       </ul>
+//       <button onClick={() => navigate("/about")}>Go to About Me</button>
+//     </div>
+//   );
+// };
 
-const About = () => {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <h1>About Me</h1>
-      <p>Short description about yourself.</p>
-      <button onClick={() => navigate("/profile")}>Go to My Profile</button>
-    </div>
-  );
-};
+// const About = () => {
+//   const navigate = useNavigate();
+//   return (
+//     <div>
+//       <h1>About Me</h1>
+//       <p>Short description about yourself.</p>
+//       <button onClick={() => navigate("/profile")}>Go to My Profile</button>
+//     </div>
+//   );
+// };
 
-const NotFound = () => <Navigate to="/about" replace />;
+// const NotFound = () => <Navigate to="/about" replace />;
 
-const App = () => {
-  return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
-  );
-};
+// const App = () => {
+//   return (
+//     <Router>
+//       <NavBar />
+//       <Routes>
+//         <Route path="/profile" element={<Profile />} />
+//         <Route path="/projects" element={<Projects />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="*" element={<NotFound />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
 
-export default App;
+// export default App;
+
+// import Profile from "./28 week/Day_3/userProfile";
+
+// export default function App() {
+//   return (
+//     <>
+//       <Profile />
+//     </>
+//   );
+// }
+
+// import React from "react";
+// import Layout from "./28 week/Day_4/Layout";
+// import Protected from "./28 week/Day_4/Protected";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// export default function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Layout />}>
+//           <Route element={<Home />} />
+
+//           <Route element={<Protected />}>
+//             <Route path="/about" element={<Amir_Acc />} />
+//             <Route path="/contact" element={<Elnaz_Acc />} />
+//           </Route>
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// function Home() {
+//   return <h1>Home Page</h1>;
+// }e
+// function Amir_Acc() {
+//   return <h1>Instagram sameone</h1>;
+// }
+// function Elnaz_Acc() {
+//   return <h1>Instagram Elnaz</h1>;
+// }
+
+// export default function App() {
+//   return (
+//     <div>
+//       <Day_1 />
+//     </div>
+//   );
+// }
+// import WeatherApp from './30 week/Day_2'
+// export default function App() {
+//   return (
+//     <div>
+//       <WeatherApp />
+//     </div>
+//   );
+// }
+
+// export default function App() {
+//   return (
+//     <div>
+//       <GameList />
+//     </div>
+//   );
+// }
+// export default function App() {
+//   return (
+//     <div>
+//       <OrderForm />
+//     </div>
+//   );
+// }
