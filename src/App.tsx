@@ -11,7 +11,7 @@
 //         alt=""
 //       />
 
-import OrderForm from "./30 week/Day_1/Day_2/OrderForm";
+// import OrderForm from "./30 week/Day_1/Day_2/OrderForm";
 
 // import GameList from "./30 week/Day_1/Day_2/GameList";
 
