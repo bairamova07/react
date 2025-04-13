@@ -11,6 +11,8 @@
 //         alt=""
 //       />
 
+import CompA from "./CompA";
+
 // import OrderForm from "./30 week/Day_1/Day_2/OrderForm";
 
 // import GameList from "./30 week/Day_1/Day_2/GameList";
@@ -503,3 +505,72 @@
 //     </div>
 //   );
 // }
+// const App = () => {
+//   return (
+//     <div>
+//       <Grandparent />
+//     </div>
+//   );
+// };
+
+// function Grandparent() {
+//   const toy = "Robot";
+//   return <Parent toy={toy} />;
+// }
+// function Parent({ toy }) {
+//   return <Child toy={toy} />;
+// }
+// function Child({ toy }) {
+//   return <p>Its my:{toy}</p>;
+// }
+
+// export default App;
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Friends />
+//     </div>
+//   );
+// };
+
+// function Friends() {
+//   const toy = "book";
+//   return <Sister toy={toy} />;
+// }
+// function Sister({ toy }) {
+//   return <Anna toy={toy} />;
+// }
+// function Anna({ toy }) {
+//   return <p>Its my:{toy}</p>;
+// }
+
+// export default App;
+// import React from "react";
+
+// const App = () => {
+//   return <Grandparent />;
+// };
+
+// const ToyContext = React.createContext();
+
+// function Grandparent() {
+//   const toy = "Робот";
+//   return (
+//     <ToyContext.Provider value={toy}>
+//       {" "}
+//       <Parent />{" "}
+//     </ToyContext.Provider>
+//   );
+// }
+
+// function Parent() {
+//   return <Child />;
+// }
+
+// function Child() {
+//   const toy = React.useContext(ToyContext);
+//   return <p>Менің ойыншығым: {toy}</p>;
+// }
+
+// export default App;
